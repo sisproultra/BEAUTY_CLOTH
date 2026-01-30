@@ -1,0 +1,7 @@
+{
+  "name": "BEAUTY CLOTH",
+  "description": "Sistema de Punto de Venta (POS) mobile-first para tiendas de ropa con gestión de inventario por variantes, clientes y reportes.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}

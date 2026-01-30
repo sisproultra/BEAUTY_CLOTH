@@ -1,0 +1,51 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+  }
+  ::-webkit-scrollbar {
+      display: none;
+  }
+  body {
+      font-family: 'Outfit', sans-serif;
+      -webkit-tap-highlight-color: transparent;
+      overflow: hidden;
+      @apply h-full bg-gray-50;
+  }
+}
+
+@layer components {
+  .custom-scrollbar::-webkit-scrollbar {
+      display: block;
+      width: 4px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+      @apply bg-pink-400 rounded-full;
+  }
+}
+
+@media print {
+    .no-print { display: none !important; }
+    .print-only { display: block !important; }
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  75% { transform: translateX(5px); }
+}
+
+.animate-shake {
+  animation: shake 0.2s ease-in-out 0s 2;
+}
+
+/* Fix for mobile height issues */
+#root {
+  height: 100%;
+  overflow: hidden;
+}

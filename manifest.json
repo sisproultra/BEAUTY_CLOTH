@@ -1,0 +1,25 @@
+
+{
+  "name": "Beauty Cloth POS",
+  "short_name": "BeautyPOS",
+  "description": "Sistema de Punto de Venta para Tienda de Ropa",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#f472b6",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/3050/3050231.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/3050/3050231.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
